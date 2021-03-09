@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Four 04</title>
+</head>
+<body>
+<script>
+    var a = [1, 2, 3, 4, 5];
+    for(var i = 0; i < a.length; ++i){
+        console.log(a[i]);
+    }
+
+    console.log(i);
+
+    function iterator01(b){
+        for(var j = 0; j < b.length; j++){
+            console.log(b[j]);
+        }
+
+        console.log(j);
+    }
+    iterator01(a);
+
+
+    // console.log(j); 是的，js只有两种作用域，全局作用域和函数作用域，没有块作用域
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Five 05</title>
+</head>
+<body>
+<script>
+    // 创建一个英雄对象，并且给他加上属性和方法
+    var hero = new Object(); // 创建一个空的英雄对象
+
+    // 通过"."语法给这个hero加上一些属性
+    hero.name = "盖伦";         // 给对象添加了一个name的属性
+    hero.skill = "正义审判";    // 给对象添加一个技能属性
+
+    // 通过 对象名.方法名 = function(){} 给hero加上一个方法
+    hero.attack = function() {
+        console.log("盖伦攻击了小怪物");
+    }
+    hero.attack();
+</script>
+</body>
+</html>
