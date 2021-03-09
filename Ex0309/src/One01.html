@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<!--
+    head元素可以看作是一个容器，常用的标签有title元素（必须），meta元素（定义文档的元信息，可以被浏览器获取解析）
+    style元素和link元素一般是用来规定样式表
+    script元素是定义Javascript代码，这个标签可以即可以放在head元素里，也可以放在body元素里。
+-->
+    <meta charset="UTF-8">
+<!--    title元素是必须的-->
+    <title>One 01</title>
+</head>
+<body>
+<h1>标题，块元素，自动换行</h1>
+<p>段落，块元素，自动换行</p>
+<p>html文档会自动过滤多个空行和空格，也就是说多个空行和空格在被浏览器解析时候都只会显示一个空格</p>
+&lt;br /&gt; 是空元素/空标签，空元素在开始标签中闭合
+<br />
+&lt;hr /&gt; 标签创建水平线
+<hr />
+<p>html对大小写不敏感，但是强烈建议使用小写标签</p>
+<p>html标签可以设置属性，写在开始标签里， 以 name="value"的形式，属性值包裹在双引号中，如果属性值中含有双引号，则可以使用单引号包裹属性值<br />
+    html元素一般可以嵌套，只是一般。<br />
+    id 、 class和style属性是最常用的全局属性<br />
+    id属性规定该标签/元素在该html文档中唯一的id(不同html文档，元素id可以一样，见Test01项目)<br />
+    class属性规定该标签/元素在的类名，可以为一个元素同时设置多个class类名，也可以为多个元素同时设置一个class类名<br />
+    style属性规定该元素的行内样式
+</p>
+<a href="https://www.baidu.com/">这是一个超链接,注意超链接有结束标签</a>
+<p>超链接的href属性值可以是一个网址（需要带有http、https协议，在网址的最后需要以/结尾，这样只会产生一次请求）<br />
+    也可以是一个文件链接，（可以是相对路径，也可以是决定路径，一般用相对路径比较好一些。）也可以是一个锚<br />
+    超链接的target属性可以设置点击超链接时打开窗口的方式
+</p>
+<p>
+<!--    <img src="https://imgtu.com/i/63S6H0" />-->
+    <img src="https://s3.ax1x.com/2021/03/09/63S6H0.jpg" alt="63S6H0.jpg" width="284"/><br />
+    <img src="photo/pic1.jpeg" alt="pic1" width="284" height="177" /><br />
+    img元素是内联元素，不会自动换行。<br />
+    img元素也是空元素/空标签，也是在开始标签中结束。常用的属性有src（可以是超链接，也可以是本地文件路径），alt，width和height
+</p>
+
+<ol>
+    <li>order list 1</li>
+    <li>order list 2</li>
+</ol>
+<ul>
+    <li>unorder list 1</li>
+    <li>unorder list 2</li>
+</ul>
+
+<table border="1">
+    <tr>
+        <th>name</th>
+        <th>age</th>
+    </tr>
+
+    <tr>
+        <td>lifan</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>lijiaojiao</td>
+        <td>23</td>
+    </tr>
+</table>
+
+<p>表格的内容还挺多的，边框，跨行跨列，表头，标题，间距，表单元格里可以放很多东西，之前会用表格来做网页排版，现在用div元素来排版</p>
+<div>
+    <p>
+        &lt;div&gt;元素没有特殊的含义，是一个块元素，会自动换行，常用来排版。
+    </p>
+</div>
+
+</body>
+</html>

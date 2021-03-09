@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Three 03</title>
+</head>
+<body>
+<!--
+    method 方法里有post和get方法
+    复杂的说，里面有很多内容，涉及到tcp和http协议的细节
+    简单的说，就是get是把信息附在url上明文发送的
+    post是封装成一个一个请求体发送过去的
+-->
+<form method="post" action="">
+    以下为账户信息，必填
+    <hr />
+    请输入用户名：<input type="text" name="username" id="username" required /><br />
+    请输入电话号码：<input type="tel" name="tel" id="tel" required /><br />
+    请输入电子邮箱：<input type="email" name="email" id="email" required /><br />
+    请输入密码：<input type="password" name="password" id="password" required /><br />
+    确认密码： <input type="password" name="re_password" id="re_password" required />
+    <br />
+
+    以下为个人信息，选填
+    <hr />
+    真实姓名：<input type="text" name="realname" id="realname" /><br />
+    性别：<input type="radio" name="sex" value="male" checked /> &nbsp; &nbsp;
+    <input type="radio" name="sex" value="female" /><br />
+    年收入（单位：万）:
+    <select name="income">
+        <option value="3">3万以下</option>
+        <option value="5">3-5万</option>
+        <option value="10">5-10万</option>
+        <option value="20">10万以上</option>
+    </select><br />
+    个人爱好：<br />
+    <input type="checkbox" name="hobby" value="sing"/> 唱歌<br />
+    <input type="checkbox" name="hobby" value="ball" /> 球类<br />
+    <input type="checkbox" name="hobby" value="run" /> 跑步<br />
+    个人简介：<textarea>请输入自我介绍</textarea><br />
+    <br />
+
+    <button type="reset" id="reset">重置</button> &nbsp;&nbsp;
+    <button type="submit" id="submit">提交</button>
+
+
+
+</form>
+</body>
+</html>
