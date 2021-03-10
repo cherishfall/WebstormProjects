@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom 练习-dom注册事件</title>
+</head>
+<body>
+<button id="button">查看现在的时间</button>
+<script>
+    var button = document.getElementById("button");
+    button.onclick = function (){
+        button.innerHTML = Date();
+    }
+</script>
+
+</body>
+</html>

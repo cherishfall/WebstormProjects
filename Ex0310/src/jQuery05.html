@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom 练习2-新增元素节点</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    var body = document.getElementsByTagName("body");
+    body1 = body[0];
+
+    var p1 = document.createElement("p");
+    var text1 = document.createTextNode("p1");
+    p1.appendChild(text1);
+    body1.appendChild(p1);
+
+    var p2 = document.createElement("p");
+    var text2 = document.createTextNode("p2");
+
+    body1.appendChild(p2.appendChild(text2));
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js注册事件1</title>
+<!--    写在上面是不行的-->
+<!--    <script>-->
+<!--        var p1 = document.getElementById("p1");//获取dom对象时候，传参要传个字符串-->
+<!--        p1.onclick = function (){-->
+<!--            alert("你点了我");-->
+<!--        }-->
+<!--    </script>-->
+
+
+</head>
+<body>
+<p id="p1">点我</p>
+<!--这个是可以的-->
+<script>
+    var p1 = document.getElementById("p1");//获取dom对象时候，传参要传个字符串
+    p1.onclick = function (){
+        alert("你点了我");
+    }
+</script>
+
+</body>
+</html>

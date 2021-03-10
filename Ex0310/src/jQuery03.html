@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js注册事件2</title>
+<!--
+    下面这条语句不得行，具体原因是js脚本的加载顺序的原因
+    简单来说，当遇到外部脚本引用的时候，不管是本地文件还是网络文件，都会中断html的渲染，跑去加载，也就是会阻塞
+    如果是把js脚本不加设置的放在 head 元素中，会在dom对象生成之前加载脚本，可以用这个特性来做一些事情
+    这个特性在使用时，可以通过把脚本放在body的尾部，把脚本放在所使用的元素之后，或者通过设置 脚本的 defer属性来解决
+-->
+<!--
+    关于js脚本的放置问题，可以看这篇
+    async和defer都代表异步执行，他们的下载过程都可以在HTML的解析过程中进行，
+    async加载完成之后立即执行这个文件的代码，执行文件代码的过程中会阻塞HTML的解析，
+    defer是在HTML文档解析之后再执行加载完成的文件
+作者：小m_up
+链接：https://www.jianshu.com/p/66bffa5907c1
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+-->
+<!--    <script src="jQuery03JS.js" ></script>-->
+
+<!--    这条语句是可以的-->
+    <script src="script/jQuery03JS.js" defer></script>
+<!--    这条语句在这个小案例里也是可以的-->
+<!--    <script src="jQuery03JS.js" async></script>-->
+</head>
+<body>
+<p id="p2">点我</p>
+</body>
+</html>
